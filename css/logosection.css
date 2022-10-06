@@ -138,6 +138,11 @@ footer div {
   color: #0a1b2daf;
 }
 
+.paddingD{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 
 @media only screen and (max-width: 1380px)  {
    
