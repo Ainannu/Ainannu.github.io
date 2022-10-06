@@ -28,7 +28,6 @@
     cursor: pointer;
 }
 
-
 @media only screen and (max-width: 770px){
     .headerText{
         font-size: 60px;
