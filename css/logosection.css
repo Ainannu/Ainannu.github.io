@@ -143,6 +143,10 @@ footer div {
   padding-right: 5px;
 }
 
+.marginT{
+  margin-top: 30px;
+}
+
 
 @media only screen and (max-width: 1380px)  {
    
