@@ -1,0 +1,48 @@
+.headerBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerText{
+    font-size: 90px;
+    color: #0a1b2d;
+}
+
+.supportersBox{
+    margin-top: 50px;
+}
+
+.targetedPeople{
+    opacity: 0.5;
+    font-size: 15px;
+}
+
+.intro{
+    font-size: 16px;
+}
+
+.register{
+    font-size: 20px;
+    color: #0a1b2d;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 770px){
+    .headerText{
+        font-size: 60px;
+        margin-top: 50px;
+    }
+
+    .register{
+        font-size: 16px;
+        color: #0a1b2d;
+    }
+
+    .margin-770{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+}

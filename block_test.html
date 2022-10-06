@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="icon" href="img/favicons/favicon.ico">
+
+    <title>test</title>
+    <style>
+        :root {
+            --primary: #009495;
+            --secondary: #02e9bd;
+            --dark: #212121;
+            --light: #F3F3F3;
+        }
+
+        body{
+            background-image: linear-gradient(var(--primary),var(--dark),var(--dark), var(--secondary));;
+            height: 10000px;
+
+        }
+
+
+
+
+    </style>
+    <link href="css/Challenges.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- <div class="card">
+
+        <div class="cardInner">
+            <div class="cardFace cardFace--front">
+                <h2></h2>
+                <div></div>
+            </div>
+            <div class="cardFace cardFace--back">
+                <div class="cardContent">
+                    <div class="cardHeader">
+                        <h3></h3>
+                    </div>
+                    <div class="cardBody">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div> -->
+</body>
+
+<script>
+    const card = document.querySelector(".cardInner");
+
+    card.addEventListener("click", function (e) {
+    card.classList.toggle('is-flipped');
+});
+</script>
+
+</html>
