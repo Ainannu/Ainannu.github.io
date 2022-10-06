@@ -11,7 +11,7 @@ let reveled = -1;
 let pastI = -1;
 let width;
 
-console.log(screen.width);
+// console.log(screen.width);
 
 window.onscroll = (event) => {
     let scroll = window.pageYOffset;
@@ -20,7 +20,7 @@ window.onscroll = (event) => {
     let logoSection = 635;
     let newScroll = scroll - logoSection;
     let mobileScroll = scroll - logoSectionMobile;
-    console.log("Y : " + scroll);
+    // console.log("Y : " + scroll);
     // console.log("width: " + width);
     const body = document.getElementsByTagName('body')[0];
     if (screen.width > 770) {
@@ -181,7 +181,7 @@ window.onscroll = (event) => {
 
 
 let releaseYear = 2022;
-let releaseDay = 10;
+let releaseDay = 7;
 let releaseMonth = "oct";
 let releaseHours = "00:";
 let releaseMinutes = "00:";
@@ -236,7 +236,6 @@ let timeFormating = (time, elementName, index) => {
         countDown = seconds + "s";
 
     // element.innerHTML = countDown;
-    // console.log(countDown);
 
 
     if (distance < 0) {
@@ -323,7 +322,7 @@ if (screen && screen.width <= 770) {
     let counter = 1;
     const imageSize = imageBox[0].clientWidth + 20;
     const center = (screen.width - imageSize) / 2;
-    console.log(center);
+    // console.log(center);
     imageShowContainer[0].style.transform = "matrix(1, 0, 0, 1, " + (imageSize * counter - center) + ",0)";
     underText[counter].style.opacity = 1;
     imageBox[counter - 1].style.opacity = lightOpacity;
@@ -333,7 +332,7 @@ if (screen && screen.width <= 770) {
     const slidingImages = () => {
         imageShowContainer[0].style.transition = "transform 1s ease-in-out";
         counter++;
-        console.log(counter);
+        // console.log(counter);
         imageShowContainer[0].style.transform = "matrix(1, 0, 0, 1, " + (imageSize * counter - center) + ",0)";
         if(counter == 4){
             underText[1].style.opacity = 1;
