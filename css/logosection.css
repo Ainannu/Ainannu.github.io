@@ -223,7 +223,7 @@ footer div {
   .Hackathon{
     letter-spacing:6px;
     margin-right: 0;
-    width: 350px;
+    width: 320px;
   }
 
 
@@ -245,7 +245,7 @@ footer div {
     display: flex;
     flex-direction: column;
     row-gap: 40px;
-    width: 360px;
+    width: fit-content;
   }
 
   .logoPannel .text{
@@ -255,21 +255,21 @@ footer div {
     width: fit-content;
     justify-content: center;
     align-items: baseline; */
-    width: 350px;
+    width: 320px;
   }
 
   .logoImg{
-    width: 350px;
+    width: 320px;
   }
 
   .logoPannel .logo {
-    width:350px;
+    width:320px;
     margin-left: 0;
     /* margin-left: 50px; */
   }
 
   .infoTextBox{
-    width: 340px;
+    width: 320px;
     margin-right: 10px;
   }
 
