@@ -271,7 +271,7 @@ setInterval(timeFormating, 1000, countDownDateChallenge14, "challenge14Timer", 1
 // });
 
 // Set the date we're counting down to
-const countDownDate = new Date("oct 24, 2022 00:00:00").getTime();
+const countDownDate = new Date("oct 10, 2022 16:30:00").getTime();
 
 // Update the count down every 1 second
 let x = setInterval(function () {
@@ -304,7 +304,7 @@ let x = setInterval(function () {
     // If the count down is finished, write some text 
     if (distance < 0) {
         clearInterval(x);
-        demo.innerHTML = "انتهى التسجل";
+        demo.innerHTML = "بدا التسجل";
     }else{
         demo.innerHTML = RcountDown;
     }
