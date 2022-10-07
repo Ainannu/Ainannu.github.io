@@ -99,7 +99,7 @@ window.onscroll = (event) => {
             }
             if (newScroll < 600) {
                 if (width > 1200)
-                    img4[0].style.transform = "matrix(" + (1 + newScroll * 0.0003) + ",0,0," + (1 + newScroll * 0.0003) + "," + (newScroll * .6 - 100) + "," + (1.25 * newScroll - 1280) + ")";
+                    img4[0].style.transform = "matrix(" + (1 + newScroll * 0.00045) + ",0,0," + (1 + newScroll * 0.00045) + "," + (newScroll * .64 - 100) + "," + (1.26 * newScroll - 1280) + ")";
                 else if (width < 1200 && width > 770)
                     img4[0].style.transform = "matrix(" + (1 + newScroll * 0.00015) + ",0,0," + (1 + newScroll * 0.00015) + "," + (newScroll * .40 - 100) + "," + (0.92 * newScroll - 1020) + ")";
 
@@ -108,7 +108,7 @@ window.onscroll = (event) => {
             if (newScroll > 700) {
                 // img4[0].lastElementChild.classList.remove("hidden");
                 if (width > 1200)
-                    img4[0].style.transform = "matrix(" + (1 + 600 * 0.0003) + ",0,0," + (1 + 600 * 0.0003) + "," + (600 * .6 - 100) + "," + (1.25 * 600 - 1280) + ")";
+                    img4[0].style.transform = "matrix(" + (1 + 600 * 0.00045) + ",0,0," + (1 + 600 * 0.00045) + "," + (600 * .64 - 100) + "," + (1.26 * 600 - 1280) + ")";
                 else if (width < 1200 && width > 770)
                     img4[0].style.transform = "matrix(" + (1 + 600 * 0.00015) + ",0,0," + (1 + 600 * 0.00015) + "," + (600 * .40 - 100) + "," + (0.92 * 600 - 1020) + ")";
                 img4[0].lastElementChild.classList.add("changeOpacityNormal");
@@ -181,9 +181,9 @@ window.onscroll = (event) => {
 
 
 let releaseYear = 2022;
-let releaseDay = 7;
+let releaseDay = 10;
 let releaseMonth = "oct";
-let releaseHours = "00:";
+let releaseHours = "20:";
 let releaseMinutes = "00:";
 let releaseSeconds = "00";
   
