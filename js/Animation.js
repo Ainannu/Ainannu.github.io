@@ -271,7 +271,7 @@ setInterval(timeFormating, 1000, countDownDateChallenge14, "challenge14Timer", 1
 // });
 
 // Set the date we're counting down to
-const countDownDate = new Date("oct 12, 2022 16:30:00").getTime();
+const countDownDate = new Date("nov 1, 2022 16:30:00").getTime();
 
 // Update the count down every 1 second
 let x = setInterval(function () {
