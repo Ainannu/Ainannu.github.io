@@ -23,7 +23,7 @@ window.onscroll = (event) => {
     // console.log("Y : " + scroll);
     // console.log("width: " + width);
     const body = document.getElementsByTagName('body')[0];
-    if (screen.width > 770) {
+    if (window.innerWidth > 770) {
         if (scroll > 300) {
             getReady[0].children[0].classList.add("changeOpacityNormal");
             getReady[0].children[1].classList.add("changeOpacitySlow");
@@ -181,7 +181,7 @@ window.onscroll = (event) => {
 
 
 let releaseYear = 2022;
-let releaseDay = 28;
+let releaseDay = 29;
 let releaseMonth = "oct";
 let releaseHours = "20:";
 let releaseMinutes = "00:";
@@ -191,7 +191,7 @@ const countDownDateChallenge1 = new Date(releaseMonth + " " +(releaseDay) + ", "
 const countDownDateChallenge2 = new Date(releaseMonth + " " +(releaseDay) + ", " + releaseYear + " " + releaseHours + releaseMinutes + releaseSeconds).getTime();
 const countDownDateChallenge3 = new Date(releaseMonth + " " +(releaseDay+2) + ", " + releaseYear + " " + releaseHours + releaseMinutes + releaseSeconds).getTime();
 const countDownDateChallenge4 = new Date(releaseMonth + " " +(releaseDay+2) + ", " + releaseYear + " " + releaseHours + releaseMinutes + releaseSeconds).getTime();
-releaseDay = 1;
+releaseDay = 2;
 releaseMonth = "nov";
 const countDownDateChallenge5 = new Date(releaseMonth + " " +(releaseDay) + ", " + releaseYear + " " + releaseHours + releaseMinutes + releaseSeconds).getTime();
 const countDownDateChallenge6 = new Date(releaseMonth + " " +(releaseDay) + ", " + releaseYear + " " + releaseHours + releaseMinutes + releaseSeconds).getTime();
@@ -318,14 +318,14 @@ let x = setInterval(function () {
 //mobile animation
 
 
-if (screen && screen.width <= 770) {
+if (screen && window.innerWidth <= 770) {
     const imageShowContainer = document.getElementsByClassName("imageShowContainer");
     const imageBox = document.getElementsByClassName("imageBox");
     const underText = document.getElementsByClassName("underText");
     let lightOpacity = 0.6;
     let counter = 1;
     const imageSize = imageBox[0].clientWidth + 20;
-    const center = (screen.width - imageSize) / 2;
+    const center = (window.innerWidth - imageSize) / 2;
     // console.log(center);
     imageShowContainer[0].style.transform = "matrix(1, 0, 0, 1, " + (imageSize * counter - center) + ",0)";
     underText[counter].style.opacity = 1;
@@ -350,7 +350,7 @@ if (screen && screen.width <= 770) {
 
     }
 
-    setInterval(slidingImages, 3000);
+    setInterval(slidingImages, 4000);
 
     imageShowContainer[0].addEventListener('transitionend', (event) => {
 
@@ -398,4 +398,60 @@ const goTop = () => {
         behavior: 'smooth' 
       });
 }
+
+
+const GimageShowContainer = document.getElementsByClassName("GalleryContainer");
+    const GimageBox = document.getElementsByClassName("GalleryBox");
+    const GunderText = document.getElementsByClassName("GunderText");
+    let lightOpacity = 0.6;
+    let counter = 1;
+    const imageSize = GimageBox[0].clientWidth + 20;
+    console.log(imageSize);
+    const center = (window.innerWidth - imageSize) / 2;
+    console.log(center);
+    GimageShowContainer[0].style.transform = "matrix(1, 0, 0, 1, " + (imageSize * counter - center) + ",0)";
+    console.log(imageSize * counter - center);
+    GunderText[counter].style.opacity = 1;
+    GimageBox[counter - 1].style.opacity = lightOpacity;
+    GimageBox[counter + 1].style.opacity = lightOpacity;
+    GimageBox[counter].style.opacity = 1;
+
+    const GslidingImages = () => {
+        GimageShowContainer[0].style.transition = "transform 1s ease-in-out";
+        counter++;
+        // console.log(counter);
+        GimageShowContainer[0].style.transform = "matrix(1, 0, 0, 1, " + (imageSize * counter - center) + ",0)";
+        if(counter == 4){
+            GunderText[1].style.opacity = 1;
+            GimageBox[1].style.opacity = 1;
+        }
+        GunderText[counter].style.opacity = 1;
+        GunderText[counter - 1].style.opacity = 0;
+        GimageBox[counter - 1].style.opacity = lightOpacity;
+        GimageBox[counter + 1].style.opacity = lightOpacity;
+        GimageBox[counter].style.opacity = 1;
+
+    }
+
+    setInterval(GslidingImages, 4000);
+
+    GimageShowContainer[0].addEventListener('transitionend', (event) => {
+
+        if(counter > GimageBox.length || counter < 0){
+            counter = 2;
+        }
+
+        if ((GimageBox[counter].id === 'GfirstClone' && event.propertyName === "transform")) {
+            GimageShowContainer[0].style.transition = "none";
+            counter = GimageBox.length - 1 - counter;
+            GimageShowContainer[0].style.transform = "matrix(1, 0, 0, 1, " + (imageSize * counter - center) + ",0)";
+            GunderText[counter].style.opacity = 1;
+            GunderText[5].style.opacity = 0;
+            GimageBox[5].style.opacity = lightOpacity;
+            GimageBox[counter - 1].style.opacity = lightOpacity;
+            GimageBox[counter + 1].style.opacity = lightOpacity;
+            GimageBox[counter].style.opacity = 1;
+
+        }
+    })
 
