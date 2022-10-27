@@ -275,7 +275,7 @@ setInterval(timeFormating, 1000, countDownDateChallenge16, "challenge16Timer", 1
 // });
 
 // Set the date we're counting down to
-const countDownDate = new Date("oct 28, 2022 16:30:00").getTime();
+const countDownDate = new Date("oct 29, 2022 16:30:00").getTime();
 
 // Update the count down every 1 second
 let x = setInterval(function () {
@@ -377,11 +377,11 @@ if (screen && window.innerWidth <= 770) {
 const goDown = () =>{
     let x;
     if(window.innerWidth > 1200){
-        x = 2860;
+        x = 3500;
     }else if(window.innerWidth < 1200 && window.innerWidth > 770){
-        x =  2350;
+        x =  2800;
     }else{
-        x = 1836;
+        x = 2300;
     }
 
     window.scrollTo({
