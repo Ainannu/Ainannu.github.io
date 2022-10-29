@@ -608,7 +608,7 @@ let x = setInterval(function () {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    demo.innerHTML = "بدء التسجيل";
+    demo.innerHTML = "";
   } else {
     demo.innerHTML = RcountDown;
   }
