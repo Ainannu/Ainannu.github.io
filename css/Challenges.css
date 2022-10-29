@@ -8,8 +8,10 @@
     grid-gap: 30px;
     grid-template-columns: 1fr 1fr 1fr; 
     /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
-        
 }
+
+
+
 
 :root {
     --primary: #009495;
@@ -19,7 +21,6 @@
 }
 
 .myCard{
-
     /* just for testing */
     /* margin-top: 100px;*/
     margin-left: auto;
@@ -27,6 +28,10 @@
     height: 510px;  
     width: 340px;
     perspective: 1000px;
+}
+
+.lastChallenge{
+    grid-column: 2;
 }
 
 .cardInner {
@@ -166,6 +171,10 @@
         display: grid;
         grid-template-columns: 1fr; 
         /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ; */
+    }
+
+    .lastChallenge{
+        grid-column: 1;
     }
 
     .container{ 
