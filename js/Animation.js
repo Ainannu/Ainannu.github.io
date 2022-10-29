@@ -257,13 +257,6 @@ window.onscroll = (event) => {
       if (newScroll > 1200) {
         if (width > 1200) readyAR[0].classList.add("changeOpacityNormal");
       }
-
-      // if (newScroll > 3000) {
-      //     body.style.backgroundColor = 'white';
-      // } else {
-      //     body.style.backgroundColor = 'black';
-      // }
-
       if (scroll > 2400 && width > 1200) {
         if (reveled != pastI) {
           // console.log("this is current index " +reveled);
@@ -305,15 +298,6 @@ window.onscroll = (event) => {
   }
 };
 
-// const goBlack = () => {
-//     const body = document.getElementsByTagName('body')[0];
-//     body.style.backgroundColor = 'black';
-// };
-
-// window.ready = function () {
-//     window.scrollTo(0, 0);
-// };
-
 let releaseYear = 2022;
 let releaseDay = 29;
 let releaseMonth = "oct";
@@ -324,181 +308,181 @@ let releaseSeconds = "00";
 
 const countDownDateChallenge1 = new Date(
   releaseMonth +
-    " " +
-    releaseDay +
-    ", " +
-    releaseYear +
-    " " +
-    releaseHours +
-    releaseMinutes +
-    releaseSeconds
+  " " +
+  releaseDay +
+  ", " +
+  releaseYear +
+  " " +
+  releaseHours +
+  releaseMinutes +
+  releaseSeconds
 ).getTime();
 const countDownDateChallenge2 = new Date(
   releaseMonth +
-    " " +
-    releaseDay +
-    ", " +
-    releaseYear +
-    " " +
-    releaseHours2 +
-    releaseMinutes +
-    releaseSeconds
+  " " +
+  releaseDay +
+  ", " +
+  releaseYear +
+  " " +
+  releaseHours2 +
+  releaseMinutes +
+  releaseSeconds
 ).getTime();
 const countDownDateChallenge3 = new Date(
   releaseMonth +
-    " " +
-    (releaseDay + 2) +
-    ", " +
-    releaseYear +
-    " " +
-    releaseHours +
-    releaseMinutes +
-    releaseSeconds
+  " " +
+  (releaseDay + 2) +
+  ", " +
+  releaseYear +
+  " " +
+  releaseHours +
+  releaseMinutes +
+  releaseSeconds
 ).getTime();
 const countDownDateChallenge4 = new Date(
   releaseMonth +
-    " " +
-    (releaseDay + 2) +
-    ", " +
-    releaseYear +
-    " " +
-    releaseHours2 +
-    releaseMinutes +
-    releaseSeconds
+  " " +
+  (releaseDay + 2) +
+  ", " +
+  releaseYear +
+  " " +
+  releaseHours2 +
+  releaseMinutes +
+  releaseSeconds
 ).getTime();
 releaseDay = 2;
 releaseMonth = "nov";
 const countDownDateChallenge5 = new Date(
   releaseMonth +
-    " " +
-    releaseDay +
-    ", " +
-    releaseYear +
-    " " +
-    releaseHours +
-    releaseMinutes +
-    releaseSeconds
+  " " +
+  releaseDay +
+  ", " +
+  releaseYear +
+  " " +
+  releaseHours +
+  releaseMinutes +
+  releaseSeconds
 ).getTime();
 const countDownDateChallenge6 = new Date(
   releaseMonth +
-    " " +
-    releaseDay +
-    ", " +
-    releaseYear +
-    " " +
-    releaseHours2 +
-    releaseMinutes +
-    releaseSeconds
+  " " +
+  releaseDay +
+  ", " +
+  releaseYear +
+  " " +
+  releaseHours2 +
+  releaseMinutes +
+  releaseSeconds
 ).getTime();
 const countDownDateChallenge7 = new Date(
   releaseMonth +
-    " " +
-    (releaseDay + 2) +
-    ", " +
-    releaseYear +
-    " " +
-    releaseHours +
-    releaseMinutes +
-    releaseSeconds
+  " " +
+  (releaseDay + 2) +
+  ", " +
+  releaseYear +
+  " " +
+  releaseHours +
+  releaseMinutes +
+  releaseSeconds
 ).getTime();
 const countDownDateChallenge8 = new Date(
   releaseMonth +
-    " " +
-    (releaseDay + 2) +
-    ", " +
-    releaseYear +
-    " " +
-    releaseHours2 +
-    releaseMinutes +
-    releaseSeconds
+  " " +
+  (releaseDay + 2) +
+  ", " +
+  releaseYear +
+  " " +
+  releaseHours2 +
+  releaseMinutes +
+  releaseSeconds
 ).getTime();
 const countDownDateChallenge9 = new Date(
   releaseMonth +
-    " " +
-    (releaseDay + 4) +
-    ", " +
-    releaseYear +
-    " " +
-    releaseHours +
-    releaseMinutes +
-    releaseSeconds
+  " " +
+  (releaseDay + 4) +
+  ", " +
+  releaseYear +
+  " " +
+  releaseHours +
+  releaseMinutes +
+  releaseSeconds
 ).getTime();
 const countDownDateChallenge10 = new Date(
   releaseMonth +
-    " " +
-    (releaseDay + 4) +
-    ", " +
-    releaseYear +
-    " " +
-    releaseHours2 +
-    releaseMinutes +
-    releaseSeconds
+  " " +
+  (releaseDay + 4) +
+  ", " +
+  releaseYear +
+  " " +
+  releaseHours2 +
+  releaseMinutes +
+  releaseSeconds
 ).getTime();
 const countDownDateChallenge11 = new Date(
   releaseMonth +
-    " " +
-    (releaseDay + 6) +
-    ", " +
-    releaseYear +
-    " " +
-    releaseHours +
-    releaseMinutes +
-    releaseSeconds
+  " " +
+  (releaseDay + 6) +
+  ", " +
+  releaseYear +
+  " " +
+  releaseHours +
+  releaseMinutes +
+  releaseSeconds
 ).getTime();
 const countDownDateChallenge12 = new Date(
   releaseMonth +
-    " " +
-    (releaseDay + 6) +
-    ", " +
-    releaseYear +
-    " " +
-    releaseHours2 +
-    releaseMinutes +
-    releaseSeconds
+  " " +
+  (releaseDay + 6) +
+  ", " +
+  releaseYear +
+  " " +
+  releaseHours2 +
+  releaseMinutes +
+  releaseSeconds
 ).getTime();
 const countDownDateChallenge13 = new Date(
   releaseMonth +
-    " " +
-    (releaseDay + 8) +
-    ", " +
-    releaseYear +
-    " " +
-    releaseHours +
-    releaseMinutes +
-    releaseSeconds
+  " " +
+  (releaseDay + 8) +
+  ", " +
+  releaseYear +
+  " " +
+  releaseHours +
+  releaseMinutes +
+  releaseSeconds
 ).getTime();
 const countDownDateChallenge14 = new Date(
   releaseMonth +
-    " " +
-    (releaseDay + 8) +
-    ", " +
-    releaseYear +
-    " " +
-    releaseHours2 +
-    releaseMinutes +
-    releaseSeconds
+  " " +
+  (releaseDay + 8) +
+  ", " +
+  releaseYear +
+  " " +
+  releaseHours2 +
+  releaseMinutes +
+  releaseSeconds
 ).getTime();
 const countDownDateChallenge15 = new Date(
   releaseMonth +
-    " " +
-    (releaseDay + 10) +
-    ", " +
-    releaseYear +
-    " " +
-    releaseHours +
-    releaseMinutes +
-    releaseSeconds
+  " " +
+  (releaseDay + 10) +
+  ", " +
+  releaseYear +
+  " " +
+  releaseHours +
+  releaseMinutes +
+  releaseSeconds
 ).getTime();
 const countDownDateChallenge16 = new Date(
   releaseMonth +
-    " " +
-    (releaseDay + 10) +
-    ", " +
-    releaseYear +
-    " " +
-    releaseHours2 +
-    releaseMinutes +
-    releaseSeconds
+  " " +
+  (releaseDay + 10) +
+  ", " +
+  releaseYear +
+  " " +
+  releaseHours2 +
+  releaseMinutes +
+  releaseSeconds
 ).getTime();
 
 const reveling = (index) => {
