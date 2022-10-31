@@ -6,6 +6,7 @@ const readyAR = document.getElementsByClassName("readyARText");
 const getReady = document.getElementsByClassName("getReady");
 const myCard = document.getElementsByClassName("cardInner");
 const mobileText = document.getElementsByClassName("mobileTextGrid");
+let slidingShow;
 let reveled = -1;
 let pastI = -1;
 let width;
@@ -650,7 +651,7 @@ if (screen && window.innerWidth <= 770) {
     imageBox[counter].style.opacity = 1;
   };
 
-  setInterval(slidingImages, 4000);
+  slidingShow = setInterval(slidingImages, 4000);
 
   imageShowContainer[0].addEventListener("transitionend", (event) => {
     if (counter > imageBox.length || counter < 0) {

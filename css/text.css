@@ -29,6 +29,13 @@
     cursor: pointer;
 }
 
+.reg{
+    position: absolute;
+    bottom: 27px;
+    width: 290px;
+    margin: auto;
+}
+
 @media only screen and (max-width: 770px){
     .headerText{
         font-size: 60px;
