@@ -347,7 +347,7 @@ const countDownDateChallenge4 = new Date(
   ", " +
   releaseYear +
   " " +
-  releaseHours2 +
+  "21:" +
   releaseMinutes +
   releaseSeconds
 ).getTime();
