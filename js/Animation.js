@@ -336,7 +336,7 @@ const countDownDateChallenge3 = new Date(
   ", " +
   releaseYear +
   " " +
-  releaseHours2 +
+  releaseHours +
   releaseMinutes +
   releaseSeconds
 ).getTime();
