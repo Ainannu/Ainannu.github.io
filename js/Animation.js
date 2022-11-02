@@ -360,7 +360,7 @@ const countDownDateChallenge5 = new Date(
   ", " +
   releaseYear +
   " " +
-  releaseHours +
+  "17:" +
   releaseMinutes +
   releaseSeconds
 ).getTime();
