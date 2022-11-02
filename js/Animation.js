@@ -10,7 +10,7 @@ let slidingShow;
 let reveled = -1;
 let pastI = -1;
 let width;
-
+let scrollHight = 2400;
 // console.log(screen.width);
 
 window.onscroll = (event) => {
@@ -259,6 +259,7 @@ window.onscroll = (event) => {
         if (width > 1200) readyAR[0].classList.add("changeOpacityNormal");
       }
       if (scroll > 2400 && width > 1200) {
+        scrollHight = 2400;
         if (reveled != pastI) {
           // console.log("this is current index " +reveled);
           for (let i = 0; i <= reveled; i++) {
@@ -267,6 +268,7 @@ window.onscroll = (event) => {
           pastI = reveled;
         }
       } else if (scroll > 2000 && width < 1200) {
+        scrollHight = 2000;
         if (reveled != pastI) {
           // console.log("this is current index " +reveled);
           for (let i = 0; i <= reveled; i++) {
@@ -288,6 +290,7 @@ window.onscroll = (event) => {
         "changeOpacityFast"
       );
     } else if (mobileScroll > 740) {
+      scrollHight = 1430;
       if (reveled != pastI) {
         // console.log("this is current index " +reveled);
         for (let i = 0; i <= reveled; i++) {
@@ -514,7 +517,8 @@ let timeFormating = (time, elementName, index) => {
   if (distance <= 0) {
     element.innerText = "";
     reveled = index;
-    reveling(index);
+    if(window.pageYOffset > scrollHight)
+      reveling(index);
   } else element.innerText = countDown;
 };
 // let challenge1TimerInterval;
