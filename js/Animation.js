@@ -347,7 +347,7 @@ const countDownDateChallenge4 = new Date(
   ", " +
   releaseYear +
   " " +
-  "21:" +
+  releaseHours2 +
   releaseMinutes +
   releaseSeconds
 ).getTime();
@@ -360,18 +360,18 @@ const countDownDateChallenge5 = new Date(
   ", " +
   releaseYear +
   " " +
-  releaseHours +
+  "19:" +
   releaseMinutes +
   releaseSeconds
 ).getTime();
 const countDownDateChallenge6 = new Date(
   releaseMonth +
   " " +
-  releaseDay +
+  (releaseDay + 1) +
   ", " +
   releaseYear +
   " " +
-  releaseHours2 +
+  "14:" +
   releaseMinutes +
   releaseSeconds
 ).getTime();
