@@ -511,9 +511,10 @@ let timeFormating = (time, elementName, index) => {
 
   // element.innerHTML = countDown;
 
-  if (distance < 0) {
+  if (distance <= 0) {
     element.innerText = "";
     reveled = index;
+    reveling(index);
   } else element.innerText = countDown;
 };
 // let challenge1TimerInterval;
