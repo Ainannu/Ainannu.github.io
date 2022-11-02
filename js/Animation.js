@@ -302,8 +302,8 @@ window.onscroll = (event) => {
 let releaseYear = 2022;
 let releaseDay = 29;
 let releaseMonth = "oct";
-let releaseHours = "16:";
-let releaseHours2 = "20:";
+let releaseHours = "17:";
+let releaseHours2 = "21:";
 let releaseMinutes = "00:";
 let releaseSeconds = "00";
 
@@ -360,7 +360,7 @@ const countDownDateChallenge5 = new Date(
   ", " +
   releaseYear +
   " " +
-  "17:" +
+  releaseHours +
   releaseMinutes +
   releaseSeconds
 ).getTime();
