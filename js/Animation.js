@@ -11,8 +11,6 @@ let reveled = -1;
 let pastI = -1;
 let width;
 let scrollHight = 2400;
-// console.log(screen.width);
-
 window.onscroll = (event) => {
   let scroll = window.pageYOffset;
   width = window.innerWidth;
@@ -20,8 +18,6 @@ window.onscroll = (event) => {
   let logoSection = 635;
   let newScroll = scroll - logoSection;
   let mobileScroll = scroll - logoSectionMobile;
-  // console.log("Y : " + scroll);
-  // console.log("width: " + width);
   const body = document.getElementsByTagName("body")[0];
   if (window.innerWidth > 770) {
     if (scroll > 300) {
@@ -261,7 +257,6 @@ window.onscroll = (event) => {
       if (scroll > 2400 && width > 1200) {
         scrollHight = 2400;
         if (reveled != pastI) {
-          // console.log("this is current index " +reveled);
           for (let i = 0; i <= reveled; i++) {
             reveling(i);
           }
@@ -270,7 +265,6 @@ window.onscroll = (event) => {
       } else if (scroll > 2000 && width < 1200) {
         scrollHight = 2000;
         if (reveled != pastI) {
-          // console.log("this is current index " +reveled);
           for (let i = 0; i <= reveled; i++) {
             reveling(i);
           }
@@ -292,7 +286,6 @@ window.onscroll = (event) => {
     } else if (mobileScroll > 740) {
       scrollHight = 1430;
       if (reveled != pastI) {
-        // console.log("this is current index " +reveled);
         for (let i = 0; i <= reveled; i++) {
           reveling(i);
         }
@@ -312,181 +305,170 @@ let releaseSeconds = "00";
 
 const countDownDateChallenge1 = new Date(
   releaseMonth +
-  " " +
-  releaseDay +
-  ", " +
-  releaseYear +
-  " " +
-  releaseHours +
-  releaseMinutes +
-  releaseSeconds
+    " " +
+    releaseDay +
+    ", " +
+    releaseYear +
+    " " +
+    releaseHours +
+    releaseMinutes +
+    releaseSeconds
 ).getTime();
 const countDownDateChallenge2 = new Date(
   releaseMonth +
-  " " +
-  releaseDay +
-  ", " +
-  releaseYear +
-  " " +
-  releaseHours2 +
-  releaseMinutes +
-  releaseSeconds
+    " " +
+    releaseDay +
+    ", " +
+    releaseYear +
+    " " +
+    releaseHours2 +
+    releaseMinutes +
+    releaseSeconds
 ).getTime();
 const countDownDateChallenge3 = new Date(
   releaseMonth +
-  " " +
-  (releaseDay + 2) +
-  ", " +
-  releaseYear +
-  " " +
-  releaseHours +
-  releaseMinutes +
-  releaseSeconds
+    " " +
+    (releaseDay + 2) +
+    ", " +
+    releaseYear +
+    " " +
+    releaseHours +
+    releaseMinutes +
+    releaseSeconds
 ).getTime();
 const countDownDateChallenge4 = new Date(
   releaseMonth +
-  " " +
-  (releaseDay + 2) +
-  ", " +
-  releaseYear +
-  " " +
-  releaseHours2 +
-  releaseMinutes +
-  releaseSeconds
+    " " +
+    (releaseDay + 2) +
+    ", " +
+    releaseYear +
+    " " +
+    releaseHours2 +
+    releaseMinutes +
+    releaseSeconds
 ).getTime();
 releaseDay = 2;
 releaseMonth = "nov";
 const countDownDateChallenge5 = new Date(
   releaseMonth +
-  " " +
-  releaseDay +
-  ", " +
-  releaseYear +
-  " " +
-  "19:" +
-  releaseMinutes +
-  releaseSeconds
+    " " +
+    releaseDay +
+    ", " +
+    releaseYear +
+    " " +
+    "19:" +
+    releaseMinutes +
+    releaseSeconds
 ).getTime();
 const countDownDateChallenge6 = new Date(
   releaseMonth +
-  " " +
-  (releaseDay + 1) +
-  ", " +
-  releaseYear +
-  " " +
-  "14:" +
-  releaseMinutes +
-  releaseSeconds
+    " " +
+    (releaseDay + 1) +
+    ", " +
+    releaseYear +
+    " " +
+    "14:" +
+    releaseMinutes +
+    releaseSeconds
 ).getTime();
 const countDownDateChallenge7 = new Date(
   releaseMonth +
-  " " +
-  (releaseDay + 2) +
-  ", " +
-  releaseYear +
-  " " +
-  releaseHours +
-  releaseMinutes +
-  releaseSeconds
+    " " +
+    (releaseDay + 2) +
+    ", " +
+    releaseYear +
+    " " +
+    releaseHours +
+    releaseMinutes +
+    releaseSeconds
 ).getTime();
 const countDownDateChallenge8 = new Date(
   releaseMonth +
-  " " +
-  (releaseDay + 2) +
-  ", " +
-  releaseYear +
-  " " +
-  releaseHours2 +
-  releaseMinutes +
-  releaseSeconds
+    " " +
+    (releaseDay + 2) +
+    ", " +
+    releaseYear +
+    " " +
+    releaseHours2 +
+    releaseMinutes +
+    releaseSeconds
 ).getTime();
 const countDownDateChallenge9 = new Date(
   releaseMonth +
-  " " +
-  (releaseDay + 4) +
-  ", " +
-  releaseYear +
-  " " +
-  releaseHours +
-  releaseMinutes +
-  releaseSeconds
+    " " +
+    (releaseDay + 4) +
+    ", " +
+    releaseYear +
+    " " +
+    releaseHours +
+    releaseMinutes +
+    releaseSeconds
 ).getTime();
 const countDownDateChallenge10 = new Date(
   releaseMonth +
-  " " +
-  (releaseDay + 4) +
-  ", " +
-  releaseYear +
-  " " +
-  releaseHours2 +
-  releaseMinutes +
-  releaseSeconds
+    " " +
+    (releaseDay + 4) +
+    ", " +
+    releaseYear +
+    " " +
+    releaseHours2 +
+    releaseMinutes +
+    releaseSeconds
 ).getTime();
 const countDownDateChallenge11 = new Date(
   releaseMonth +
-  " " +
-  (releaseDay + 6) +
-  ", " +
-  releaseYear +
-  " " +
-  releaseHours +
-  releaseMinutes +
-  releaseSeconds
+    " " +
+    (releaseDay + 6) +
+    ", " +
+    releaseYear +
+    " " +
+    releaseHours +
+    releaseMinutes +
+    releaseSeconds
 ).getTime();
 const countDownDateChallenge12 = new Date(
   releaseMonth +
-  " " +
-  (releaseDay + 6) +
-  ", " +
-  releaseYear +
-  " " +
-  releaseHours2 +
-  releaseMinutes +
-  releaseSeconds
+    " " +
+    (releaseDay + 6) +
+    ", " +
+    releaseYear +
+    " " +
+    releaseHours2 +
+    releaseMinutes +
+    releaseSeconds
 ).getTime();
 const countDownDateChallenge13 = new Date(
   releaseMonth +
-  " " +
-  (releaseDay + 8) +
-  ", " +
-  releaseYear +
-  " " +
-  releaseHours +
-  releaseMinutes +
-  releaseSeconds
+    " " +
+    (releaseDay + 8) +
+    ", " +
+    releaseYear +
+    " " +
+    releaseHours +
+    releaseMinutes +
+    releaseSeconds
 ).getTime();
 const countDownDateChallenge14 = new Date(
   releaseMonth +
-  " " +
-  (releaseDay + 8) +
-  ", " +
-  releaseYear +
-  " " +
-  releaseHours2 +
-  releaseMinutes +
-  releaseSeconds
+    " " +
+    (releaseDay + 8) +
+    ", " +
+    releaseYear +
+    " " +
+    releaseHours2 +
+    releaseMinutes +
+    releaseSeconds
 ).getTime();
 const countDownDateChallenge15 = new Date(
   releaseMonth +
-  " " +
-  (releaseDay + 10) +
-  ", " +
-  releaseYear +
-  " " +
-  releaseHours +
-  releaseMinutes +
-  releaseSeconds
-).getTime();
-const countDownDateChallenge16 = new Date(
-  releaseMonth +
-  " " +
-  (releaseDay + 10) +
-  ", " +
-  releaseYear +
-  " " +
-  releaseHours2 +
-  releaseMinutes +
-  releaseSeconds
+    " " +
+    (releaseDay + 10) +
+    ", " +
+    releaseYear +
+    " " +
+    releaseHours +
+    releaseMinutes +
+    releaseSeconds
 ).getTime();
 
 const reveling = (index) => {
@@ -517,8 +499,7 @@ let timeFormating = (time, elementName, index) => {
   if (distance <= 0) {
     element.innerText = "";
     reveled = index;
-    if(window.pageYOffset > scrollHight)
-      reveling(index);
+    if (window.pageYOffset > scrollHight) reveling(index);
   } else element.innerText = countDown;
 };
 // let challenge1TimerInterval;
@@ -573,13 +554,6 @@ setInterval(
   "challenge15Timer",
   14
 );
-setInterval(
-  timeFormating,
-  1000,
-  countDownDateChallenge16,
-  "challenge16Timer",
-  15
-);
 
 // myCard[0].addEventListener("click", function (e) {
 //     myCard[0].classList.toggle('is-flipped');
@@ -631,7 +605,6 @@ if (screen && window.innerWidth <= 770) {
   let counter = 1;
   const imageSize = imageBox[0].clientWidth + 20;
   const center = (window.innerWidth - imageSize) / 2;
-  // console.log(center);
   imageShowContainer[0].style.transform =
     "matrix(1, 0, 0, 1, " + (imageSize * counter - center) + ",0)";
   underText[counter].style.opacity = 1;
@@ -642,7 +615,6 @@ if (screen && window.innerWidth <= 770) {
   const slidingImages = () => {
     imageShowContainer[0].style.transition = "transform 1s ease-in-out";
     counter++;
-    // console.log(counter);
     imageShowContainer[0].style.transform =
       "matrix(1, 0, 0, 1, " + (imageSize * counter - center) + ",0)";
     if (counter == 4) {
@@ -712,12 +684,9 @@ const GunderText = document.getElementsByClassName("GunderText");
 let lightOpacity = 0.6;
 let counter = 1;
 const imageSize = GimageBox[0].clientWidth + 20;
-console.log(imageSize);
 const center = (window.innerWidth - imageSize) / 2;
-console.log(center);
 GimageShowContainer[0].style.transform =
   "matrix(1, 0, 0, 1, " + (imageSize * counter - center) + ",0)";
-console.log(imageSize * counter - center);
 GunderText[counter].style.opacity = 1;
 GimageBox[counter - 1].style.opacity = lightOpacity;
 GimageBox[counter + 1].style.opacity = lightOpacity;
@@ -726,7 +695,6 @@ GimageBox[counter].style.opacity = 1;
 const GslidingImages = () => {
   GimageShowContainer[0].style.transition = "transform 1s ease-in-out";
   counter++;
-  // console.log(counter);
   GimageShowContainer[0].style.transform =
     "matrix(1, 0, 0, 1, " + (imageSize * counter - center) + ",0)";
   if (counter == 4) {
